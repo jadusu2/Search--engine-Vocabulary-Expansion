@@ -1,0 +1,49 @@
+{
+	"collection-path": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\MorningstarDocuments",
+	"Corpus-Evaluation": 
+	{
+		"Document-Scores": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES\\Corpus-Evaluation"
+	},
+	"Data-File": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES\\Corpus-Evaluation\\splitCountText.json",
+	"analyzer-options": 
+	{
+		"type": "lemma",
+		"stop-words-file": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\STOP-WORDS\\stopwords_nltk.txt"
+	},
+	"corpus-options": 
+	{
+		"Pre-Processed-Corpus-destination": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES\\Corpus\\PreProcessedCorpus-Base",
+		"Pre-Processed-Corpus-Analysis": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES\\Corpus\\PPC-Analysis\\",
+		"Analyzed-Corpus": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES\\Corpus\\AnalyzedCorpus-withStopWords",
+		"Analyzed-Corpus-Analysis": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES\\Corpus\\AC-Analysis\\"
+	},
+	"w2p-model":
+    {
+    	"W2P-model-file-bigrams": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES\\PhraserModels\\W2PBigrams",
+		"W2P-model-file-trigrams": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES\\PhraserModels\\W2PTrigrams",
+		"min-count-bigram": 50,
+		"threshold-bigram": 200,
+		"min-count-trigram": 50,
+		"threshold-trigram": 200
+    },
+    "w2v-model":
+    {
+    	"model-file-location": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES\\Word2VecModels\\W2Vmodel-5",
+    	"synonym-file": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES\\synonymns",
+        "workers": 4,
+        "size": 200,
+        "min_count": 50,
+        "window": 20
+    },
+	"engine-options":
+	{
+		"type" : "bm25",
+		"index-file": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES\\PICKLE",
+		"index-json": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES\\INDEX-JSON",
+		"output-path": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\OUTPUTFILES",
+		"n": 10,
+		"k": 1.2,
+		"b": 0.75
+	},
+	"docs-file": "E:\\Python_practice\\Mornign_Star_Project\\PDF_treatment\\Project\\CODE\\DOCS-FILE\\dp-docs.json"
+}
